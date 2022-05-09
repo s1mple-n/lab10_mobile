@@ -1,77 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".FinishActivity">
-
-    <LinearLayout
+    tools:context=".Business"
+    android:padding="15dp"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Ma So"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_id"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cong viec"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trang thai"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_trangThai"/>
+    <LinearLayout
         android:orientation="horizontal"
-        >
-
-        <EditText
-            android:id="@+id/edtid"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:hint="enter id" />
-
-        <EditText
-            android:id="@+id/edtname"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:hint="enter name" />
-
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/edtadd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="enter address" />
-
-    <EditText
-        android:id="@+id/edtemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="enter email" />
-    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnselect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select" />
-
-        <Button
-            android:id="@+id/btnsave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save" />
+        android:gravity="center"
+        >
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"/>
+            android:id="@+id/btn_submit"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Luu"
+            android:textColor="@android:color/white"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update"/>
-
+            android:id="@+id/btn_all"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Lay tat ca"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_delete"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Xoa"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/btn_update"
+            android:textColor="@android:color/white"
+            android:text="Sua"/>
     </LinearLayout>
-
-    <GridView
-        android:id="@+id/gr"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Tim theo ma so"
+        android:textColor="@android:color/white"/>
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:numColumns="4" />
-
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

@@ -63,7 +63,7 @@ public class SigninActivity extends AppCompatActivity {
                                         Toast.makeText(SigninActivity.this, "Authentication failed, check your email and password or sign up", Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new Intent(SigninActivity.this, FinishActivity.class);
+                                    Intent intent = new Intent(SigninActivity.this, Business.class);
                                     startActivity(intent);
                                     finish();
                                 }
